@@ -33,11 +33,15 @@ public class BankAccount {
     }
 
     public void withdraw(double withdrawValue){
-        this.balance -= (withdrawValue + 5.0);
+        if(withdrawValue > 0){
+            this.balance -= (withdrawValue + 5.0);
+        }
     }
 
     public void deposit(double depositValue){
-        this.balance += depositValue;
+        if(depositValue > 0){
+            this.balance += depositValue;
+        }
     }
 
     public String toString(){

@@ -1,9 +1,15 @@
 package entities;
 
 public class Employee {
-    public String name;
-    public double grossSalary;
-    public double tax;
+    private String name;
+    private double grossSalary;
+    private double tax;
+
+    public Employee(String name, double grossSalary, double tax){
+        this.name = name;
+        this.grossSalary = grossSalary;
+        this.tax = tax;
+    }
 
     public double netSalary(){
         return grossSalary - tax;

@@ -3,19 +3,17 @@ import entities.Triangle;
 
 public class TriangleWithPOO {
     static void main() {
-        Triangle x, y;
-        x = new Triangle();
-        y = new Triangle();
-
         IO.println("Enter the measures of triangle x: ");
-        x.a = Double.parseDouble(IO.readln());
-        x.b = Double.parseDouble(IO.readln());
-        x.c = Double.parseDouble(IO.readln());
+        double a = Double.parseDouble(IO.readln());
+        double b = Double.parseDouble(IO.readln());
+        double c = Double.parseDouble(IO.readln());
+        Triangle x = new Triangle(a, b, c);
 
         IO.println("Enter the measures of triangle y: ");
-        y.a = Double.parseDouble(IO.readln());
-        y.b = Double.parseDouble(IO.readln());
-        y.c = Double.parseDouble(IO.readln());
+        a = Double.parseDouble(IO.readln());
+        b = Double.parseDouble(IO.readln());
+        c = Double.parseDouble(IO.readln());
+        Triangle y = new Triangle(a, b, c);
 
         double areaX = x.area();
         double areaY = y.area();

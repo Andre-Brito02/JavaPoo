@@ -3,10 +3,10 @@ import entities.Employee;
 
 public class dadosFuncionario {
     static void main() {
-        Employee emp = new Employee();
-        emp.name = IO.readln("Name: ");
-        emp.grossSalary = Double.parseDouble(IO.readln("Gross Salary: "));
-        emp.tax = Double.parseDouble(IO.readln("Tax: "));
+        String name = IO.readln("Name: ");
+        double grossSalary = Double.parseDouble(IO.readln("Gross Salary: "));
+        double tax = Double.parseDouble(IO.readln("Tax: "));
+        Employee emp = new Employee(name, grossSalary, tax);
 
         IO.println("Employee: " + emp);
 

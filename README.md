@@ -4,6 +4,8 @@ Na pasta application temos os códigos main, que importam a classe e executam um
 
 Por enquanto, dia 29/09/2026, foi feito a criação de classes, atributos, construtor, métodos e instanciação no arquivo principal.
 
+Dia 03/10/2026 foi adicionado dois arquivos, um contendo a classe e outro o programa principal, que utiliza os conceitos anteriores de POO, com uma melhor utilização do encapsulamento e método get, além da utilização de um ArrayList para guardar todos os objetos criados nesse exercício.
+
 # Funções de Data em Java
 
 No arquivo demontracaoDataeHora.java temos as principais funções da API `java.time`, utilizando `LocalDate`.
